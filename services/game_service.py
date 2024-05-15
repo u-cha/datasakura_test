@@ -32,7 +32,7 @@ class GameResultService:
             for uuid, start_position in game_result_input.start_position.items()
         )
 
-    def calculate_game_result_output(self):
+    def calculate_game_result_output(self) -> typing.Optional[GameResultOutput]:
         if not self._is_win_condition_satisfied():
             return
 
@@ -58,5 +58,3 @@ class GameResultService:
         for player_position in self._player_positions:
             if player_position.checkers_count > 0:
                 return player_position
-
-
