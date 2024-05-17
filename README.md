@@ -8,10 +8,14 @@ then install the dependencies with `poetry install --no-root` (if you don't have
 Poetry install please proceed to its official site for instructions).
 
 I suggest that you also run `poetry shell` after deps installation to make sure that  
-you are working inside a safe virtual envrionment
+you are working inside a safe virtual environment
 
 You may decide to run `uvicorn main:app --reload`, if you wish to see the API running.
 You can then check it on `localhost:8000/docs`.
+
+*UPD*
+You may decide to run the API with docker compose like `docker-compose up -d --no-deps`.
+You can then check the API working on `localhost:3333/docs`
 
 # Endpoint
 This API has the only endpoint which takes `GameResultInput` as input and  

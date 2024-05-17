@@ -1,0 +1,6 @@
+services:
+  backgammon_api:
+    build:
+      context: .
+    ports:
+      - 3333:8000
